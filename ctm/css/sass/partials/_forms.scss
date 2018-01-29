@@ -1,0 +1,225 @@
+// QCTM
+// CONTACT STYLESHEET
+
+.form_section {
+	padding: 100px 0;
+	overflow: hidden;
+}
+.form_section h3 {
+	color: $black;
+}
+
+.form_section .form_container {
+	width: 100%;
+}
+
+// Form Into
+.form_intro {
+	padding-right: 70px;
+}
+
+// Custom styling
+.form_container {	
+	
+	@mixin float-label-container {
+	  display: block;
+	  position: relative;
+	  font-family: $font;
+	}
+
+	@mixin float-label {
+	  label, > span {
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    cursor: text;
+	    font-size: 75%;
+	    opacity: 0;
+	    // transition: all .2s;
+	    @content;
+	  }
+	}
+
+	@mixin float-label-input {
+	  &::placeholder {
+	    opacity: 1;
+	    // transition: all .2s;
+	  }
+	  &:placeholder-shown:not(:focus)::placeholder {
+	      opacity: 0;
+	  }
+	}
+
+	@mixin float-label-scaled {
+	  &:placeholder-shown:not(:focus) + * {
+	      font-size: 16px;
+	      opacity: 1;
+	      color: $input_grey;
+	      @content;
+	  }
+	}
+	
+	label, input, textarea,select {
+		font-family: "FuturaStd-Book", sans-serif;
+	}
+
+	.has-float-label {
+	  @include float-label-container;
+
+	  @include float-label;
+
+	  select {
+	    // -webkit-appearance: initial;
+	    //    -moz-appearance: initial;
+	    //         appearance: initial;
+	  }
+
+	  input, select, textarea {
+	    @include float-label-input;
+	    font-size: 16px;
+	    padding: 1em 0;
+	    margin-bottom: 2px;
+	    border: 0;
+	    border-radius: 0;
+	    border-bottom: 1px solid $border_grey;
+	       font-family: "FuturaStd-Book", sans-serif;
+
+	    @include float-label-scaled {
+	      top: 1em;
+	    }
+
+	    &:focus {
+	      outline: none;
+	      border-color: rgba(0,0,0,.5);
+	    }
+	  }
+
+	  select {
+	    padding-right: 1em;
+	    background-size: 8px 10px;
+	  }
+	}
+	sup {
+		top: 0;
+		font-size: 16px;
+	}
+
+	
+	input, select, textarea {
+	  width: 100%;
+	  margin-bottom: .5rem;
+	   font-family: $font;
+	}
+	
+	a {
+	  display: block;
+	  padding: 10px;
+	  position: absolute;
+	  z-index: -1;
+	  top: 1rem;
+	  left: 100%;
+	  margin-left: -65px;
+	  // transition: all .2s;
+	}
+	a:hover {
+	  margin-left: 0;
+	}
+	
+}
+
+.form_group {
+	display: block;
+	clear: both;
+	padding: 15px 0;
+	overflow: hidden;
+}
+.form_group.submit {
+	padding-top: 0;	
+}
+.form_group sup {
+	color: $form_blue;
+	font-family: $title_font;
+	font-size: 16px;
+}
+.black {
+	color: black;
+}
+.form_group.error {
+
+}
+
+button.submit {
+	display: inline-block;
+	background: white;
+	float: right;
+	// @include transition(all 0.3s ease-in-out);
+}
+button.submit:hover {
+	background: $light_blue;
+	color: white;
+	border: 1px solid $light_blue;
+}
+
+
+// Error styles
+.form_container .has-float-label input.error, 
+.form_container .has-float-label select.error, 
+.form_container .has-float-label textarea.error {
+	border-bottom: 1px solid $red;
+}
+.form_container .has-float-label label.error {
+	color: $red!important;
+}
+// .error label,
+// label.error {
+// 	color: $red;
+// }
+
+
+// .error input,
+// input.error {
+// 	color: $red;
+// 	border: 1px solid $red;
+// }
+
+
+// .error {
+
+// 	input {
+		
+// 		border-bottom: 1px solid $red!important;
+// 	}
+// 	label, sup, input {
+// 		color: $red!important;
+// 	}
+// }
+
+// Select style
+.custom_select select {
+	color: #969696;
+}
+.form_container .has-float-label select {
+    -webkit-appearance: inital;
+    -moz-appearance: none;
+    appearance: none;
+}
+.thank_you {
+	font-size: 16px;
+
+}
+
+@include respond-to(mobile) {
+	
+	.form_section {
+		padding: 50px 0;
+	}
+
+	// 
+	.form_intro {
+		padding: 0 0 35px;
+	}
+
+
+
+
+}

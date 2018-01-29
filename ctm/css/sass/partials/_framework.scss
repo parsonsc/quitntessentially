@@ -1,0 +1,141 @@
+// Qctm
+// Framework
+
+body {
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: $font;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+a:hover, a:focus,
+a:hover {
+	text-decoration: none;
+}
+.site_container {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+	display: block;
+}
+.main_content {
+	width: 100%;
+	position: relative;
+}
+.block {
+	padding: 35px 0;
+}
+.block__header {
+	padding: 0 0 35px;
+}
+
+// Call to actions
+.cta {
+	@include cta;
+}
+.cta.white {
+	background: white;
+	border: none;
+	color: $black;
+	padding: 10px 25px;
+}
+.cta_banner {
+	text-align: center;
+}
+.contact_cta:hover {
+	background: $light_blue;
+    color: white!important;
+}
+
+// Contact Banner 
+.contact_banner {
+	border-top: 1px solid $font_grey;
+	border-bottom: 1px solid $font_grey;
+	overflow: hidden;
+	padding: 50px 0;
+}
+
+// On scroll transition/animation
+.os-animation{
+  opacity: 0;
+}
+.os-animation.animated{
+    opacity: 1;
+}
+
+.center {
+	float: none!important;
+	margin: 0 auto!important;
+	overflow: hidden;
+}
+
+// lists - ul li, ol li 
+.list {
+	padding-left: 20px;
+}
+.list li {
+	display: list-item!important;
+	list-style-type: initial;
+}
+
+// Quotes
+
+.quote {
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+.quote_content {  
+  display: block;
+  width: 960px;
+  margin: 50px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+.quote blockquote {
+  font-family: $butler_font;
+  font-size: 34px;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.quote span {
+	letter-spacing: 0.5px;
+	color: #959595;
+}
+.homepage .quote {
+	margin-top: 100px;
+}
+
+
+@include respond-to(tablet) {
+	// Quotes
+	.quote_content {  
+	  width: 100%;
+	}
+	.quote blockquote {
+	  font-size: 30px;
+	}
+}
+
+@include respond-to(mobile) {
+	
+
+	// Quotes
+	.homepage .quote {
+		margin-top: 0;
+	}
+	.quote_content {  
+	  width: 100%;
+	}
+	.quote blockquote {
+	  font-size: 26px;
+	  margin: 0 0 20px;
+	}
+}

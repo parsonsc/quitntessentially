@@ -1,0 +1,228 @@
+// Qctm
+// Header
+
+.header {   
+    width: 100%;
+    background: #ffffff;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 9;   
+    min-height: 67px;
+}
+
+// Branding
+.branding {
+    padding: 15px 40px 0;
+}
+// Logo  
+.branding .logo {
+    display: block;
+    width: 100px;
+    float: left;  
+}
+.logo a {
+    display: block;
+    padding: 0;
+}
+.logo img {        
+    width: 100%;
+    display: block;
+}
+
+// Navigation
+nav.primary_nav {
+   display: block;
+   padding: 0;
+}
+nav.primary_nav ul {
+    float: right;
+}
+nav.primary_nav ul li {
+    display: inline-block;
+    font-family: $title_font;
+    letter-spacing: 1px; 
+    font-size: 14px; 
+    margin-right: 15px;
+    cursor: pointer;
+}
+nav.primary_nav ul li.list_item.services {
+    padding-bottom: 25px;
+}
+nav.primary_nav ul li:last-child {
+    margin-right: 0;
+}
+nav.primary_nav ul li a {
+    display: block;
+    color: $black;
+    color: rgba(0, 0, 0, 0.9);
+    padding: 5px 10px;
+    @include transition(all 0.2s ease-in-out);  
+}
+nav.primary_nav ul li a:hover {
+    text-decoration: none;
+}
+nav.primary_nav ul li:first-child a {
+    padding-left: 0;
+}
+nav.primary_nav ul li:last-child a {
+    padding-right: 0;
+}
+
+// Services
+.services i {
+    font-size: 12px;
+}
+.services img {
+    width: 10px;
+}
+// Dropdown 
+.dropdown_container {
+    position: absolute;
+    background: $white;
+    width: 100%;
+    left: 0;
+    top: 30px;
+    padding: 25px 0 40px;
+    display: none;
+    z-index: -1;
+    @include transition(all 0.2s ease-in-out);
+}
+nav.primary_nav .dropdown {
+   text-align: right;
+   width: 230px;
+   margin-right: 370px;
+
+}
+nav.primary_nav .dropdown li {
+    display: block;
+    margin-right: 0;
+}
+nav.primary_nav .dropdown li a {
+    padding: 10px 0;
+    color: $font_grey;
+}
+nav.primary_nav .dropdown li a:hover {
+    color: $black;
+}
+
+li.services:hover .dropdown_container {
+    display: block;
+}
+// Contact us
+nav.primary_nav ul li.contact {
+    padding: 10px 15px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+nav.primary_nav ul li.contact a {
+    padding: 0;
+}
+nav.primary_nav ul li.contact:hover a {
+    color: white;
+}
+nav.primary_nav ul li.phone span {
+    padding-right: 10px;
+    margin-top: -18px;
+    position: relative;
+}
+// Mobile button
+.mobile_menu {
+    float: right;
+    z-index: 9;
+    display: none;
+    font-size: 24px;
+}
+
+@include respond-to(tablet) {
+    // Branding
+    .branding {
+        padding: 10px 20px;
+    }
+
+   nav.primary_nav ul li {
+        letter-spacing: 0.8px; 
+        margin-right: 0px;
+    }
+    nav.primary_nav ul li.phone {
+        display: none;
+    }
+    
+}
+
+@include respond-to(mobile) {
+    header.header {
+        min-height: auto;
+        overflow: hidden;
+    }
+     .mobile_menu {
+        display: block;
+    }
+
+    .branding {
+        padding: 10px 15px;
+        overflow: hidden;
+    }
+    // Logo 
+    .logo img {        
+        width: 80%;
+    }
+    nav.primary_nav {
+        clear: both;
+        overflow: hidden; 
+        padding-top: 10px;   
+        display: none;
+    }
+    nav.primary_nav ul {
+        float: none;
+    }
+    nav.primary_nav ul li {
+        display: block; 
+        width: 100%;
+        text-align: right;
+    }
+    nav.primary_nav ul li.list_item.services {
+        padding-bottom: 10px;
+    }
+    nav.primary_nav ul li.services,
+    nav.primary_nav ul li a {
+        padding: 10px 0;
+    }
+
+    // Dropdown 
+    .dropdown_container {
+        position: relative;
+        left: auto;
+        top: auto;
+        padding: 10px 30px 0px 0;
+        z-index: 1;
+    }
+    nav.primary_nav .dropdown {
+       width: 100%;
+       margin-right: 0;
+
+    }
+    nav.primary_nav .dropdown li a {
+        padding: 10px 0;
+    }
+
+    li.services:hover .dropdown_container {
+        display: block;
+    }
+    // Contact us
+    nav.primary_nav ul li.contact {
+        padding: 10px 0;
+        border: none;
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        margin-left: 0;
+        text-transform: capitalize;
+    }
+    nav.primary_nav ul li.contact a {
+        padding: 0;
+    }
+    li.services:hover .dropdown_container {
+        display: inherit;
+    } 
+}

@@ -1,0 +1,66 @@
+// QCTM
+// Typography
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0 0 15px;
+  line-height: 1.1;
+  color: $font_grey;
+  font-family: $title_font;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 31px;
+}
+h2 {
+  font-size: 25px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 15px;
+}
+h5 {
+  font-size: 12px;
+}
+h6 {
+  font-size: 11px;
+}
+p {
+  margin: 0 0 8.5px;
+  font-family: $font;
+  font-weight: 200;
+}
+
+
+.paragraph_large {
+	font-size: 20px;
+}
+.grey {
+  color: $font_grey;
+}
+span {
+  font-family: $font;
+}
+
+
+
+@include respond-to(mobile) {
+
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+
+  .paragraph_large {
+    font-size: 18px;
+  }
+}

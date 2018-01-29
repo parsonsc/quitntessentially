@@ -1,0 +1,167 @@
+// QCTM
+// Services styles
+
+
+// Service Banner 
+.services_banner {
+	border-bottom: 1px solid $font_grey;
+	overflow: hidden;
+	padding: 50px 0;
+}
+.services_banner.noborder {
+	border: none;
+}
+.services_banner h3 {
+	color: $black;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.services_banner p {
+	line-height: 1.6;
+}
+.services_banner ul li {
+	display: block;
+	line-height: 2;
+}
+.service_banner a.cta {
+	margin: 0 auto;
+	text-align: center;
+}
+// Service options - Homepage section
+.service_options {
+	padding: 50px 0 50px;
+	overflow: hidden;	
+}
+.service_options .row {
+	margin: 0 auto;
+}
+
+.service_options .service_block {
+	margin: 0 auto 100px;
+	overflow: hidden;
+	width: 100%;
+	animation-duration: 2s;
+}
+
+.service_block_text,
+.service_block_image {
+	float: left;
+	display: block;
+}
+.service_block_text {
+	width: 50%;
+	text-align: right;
+	padding: 80px 75px 50px 0;
+}
+.service_block_text.right {
+	text-align: left;
+	padding: 80px 0 50px 75px;
+}
+.service_block_text h3 {
+	font-size: 30px;
+	letter-spacing: 3px;
+	color: $black;
+	text-transform: uppercase;
+}
+.service_block_text p {
+	font-size: 14px;
+	color: $font_grey;
+	letter-spacing: 1px;
+}
+.service_block_text a.cta {
+	margin-top: 35px;
+}
+
+.service_block_image {
+	width: 50%;
+}
+.service_block_image.right {
+	float: right;
+}
+.service_block_image img {
+	width: 100%;
+}
+
+// logo 
+.logos {
+	text-align: center;
+	padding: 75px 0 0;
+}
+.logos ul li {
+	display: inline-block;
+	padding-right: 100px;
+
+	&:last-child {
+		padding-right: 0;
+	}
+}
+
+
+@include respond-to(tablet) {
+	.services_section .services_header article {
+		padding: 0 0 20px;
+	}
+	.service_block_image {
+		width: 50%;
+	}
+	.service_block_text.right,
+	.service_block_text {
+	    padding: 30px 35px 0 0;
+	    width: 50%;
+	}
+	.service_block_text.right {		
+		padding: 30px 0 0 35px;
+	}
+	.service_block_text h3 {
+		font-size: 26px;
+		letter-spacing: 2px;
+	}
+	.service_block_text p {
+		letter-spacing: 0.5px;
+	}
+	.service_block_text a.cta {
+		margin-top: 15px;
+	}
+}
+@include respond-to(mobile) {
+	.services_section .services_header article {
+		padding: 0 0 20px;
+	}
+
+	.services_banner ul {
+	padding-top: 5px;
+	}
+
+	// Service options -homepage section
+	.service_options {
+		padding: 0;
+	}
+	.service_options .container {
+		padding: 0;
+	}
+	.service_options .service_block {
+		margin: 0 auto 0px;
+	}
+
+	.service_block_text,
+	.service_block_text.right {
+		width: 100%;
+		text-align: center;
+		padding: 35px 20px;
+	}
+	.service_block_image {
+		width: 100%;
+	}
+
+	.services_banner ul {
+		padding-bottom: 0;
+	}
+	// logo 
+	.logos {
+		padding: 35px 0 0;
+	}
+	.logos ul li {
+		display: block;
+		padding: 0 0 20px 0;
+	}
+}

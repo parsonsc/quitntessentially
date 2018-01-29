@@ -1,0 +1,32 @@
+// Qctm
+// Portfolio
+
+.portfolio {
+	overflow: hidden;
+}
+.portfolio ul li {
+	display: inline-block;
+	text-align: center;
+	padding: 0 0 50px;
+	overflow: hidden;
+	@include transition(all 0.2s ease-in-out);	
+}
+.portfolio ul li a {
+	display: block;
+}
+.portfolio ul li img {
+	border-radius: 50%;
+	width: 100%;
+	max-width: 200px;
+	@include transition(all 0.2s ease-in-out);
+}
+.portfolio ul li p {
+	padding: 25px 0 0 0;
+	@include transition(all 0.2s ease-in-out);
+}
+.portfolio ul li:hover {
+
+	img {
+		opacity: 0.8;
+	}
+}

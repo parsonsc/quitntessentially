@@ -1,0 +1,78 @@
+// QCTM 
+// About us page stylesheet
+
+
+// About us map - office locations
+.about_map  {
+	overflow: hidden;
+	padding: 50px 0;
+}
+.about_map header.map_header  {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 960px;
+	padding: 0 0 100px;
+}
+.about_map header.map_header article {
+	padding-left: 0;
+	padding-right: 30px;
+}
+.about_map header.map_header article:last-child {
+	padding-right: 0;
+}
+
+.about_map header.map_header article h3 {
+	color: $black;
+}
+.about_map .map {
+	margin: 0 auto;
+	width: 960px;
+}
+.about_map img {
+	width: 100%;
+	display: block;
+}
+.services_banner.travel_list {
+	border-top: 1px solid $font_grey;
+}
+.services_banner.travel_list li {
+	font-size: 14px;
+}
+
+@include respond-to(tablet) {
+	// About us map - office locations
+	.about_map header.map_header  {
+		width: 100%;
+	}
+	.about_map .map {
+		width: 100%;
+	}
+	.about_map img {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.services_banner.travel_list li {
+	    font-size: 16px;
+	}
+}
+
+
+@include respond-to(mobile) {
+	// About us map - office locations
+	.about_map  {
+		padding: 50px 0;
+	}
+	.about_map header.map_header  {
+		width: 100%;
+		padding: 0 0 35px;
+	}
+	.about_map header.map_header article {
+		padding: 0 0 20px 0;
+	}
+	.about_map .map {
+		width: 100%;
+	}
+	.services_banner.travel_list li {
+		font-size: 16px;
+	}
+}	

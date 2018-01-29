@@ -1,0 +1,220 @@
+// Qctm
+// Banner Styles
+
+.banner {
+	width: 100%;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	background-position: center center;
+}
+.banner__content {
+	text-align: center;	
+	margin: 0 auto;
+	width: 890px;
+	h1,h2,h3,h4 {
+		letter-spacing: 3px;
+		color: white;
+		text-transform: uppercase;
+	}	
+}
+
+.hero_banner {
+	max-width: 2500px;
+	padding: 100px 0;
+	min-height: 400px;
+	background-image: url(../images/banners/hp_slide_01.jpg);
+	color: white;
+}
+
+// Homepahe slide 
+.banner_slideshow .banner_slide.banner_slide_01 {  
+  background-image: url(../images/banners/hp_slide_01.jpg);
+}
+.banner_slideshow .banner_slide.banner_slide_02 {  
+  background-image: url(../images/banners/hp_slide_02.jpg);
+  background-position: center right;
+}
+.banner_slideshow .banner_slide.banner_slide_03 {  
+  background-image: url(../images/banners/hp_slide_03.jpg);
+  background-position: center right;
+}
+
+.hero_banner.contact_hero_banner {
+	background-image: url(../images/banners/contact.jpg);
+}
+
+// About us banners
+.hero_banner#about_what_we_do {
+	background-image: url(../images/banners/what_we_do.jpg);
+}
+.hero_banner#about_who_we_are {
+	background-image: url(../images/banners/who_we_are.jpg);
+}
+
+// Services banner
+.hero_banner#service_air {
+	background-image: url(../images/banners/service_air.jpg);
+}
+.hero_banner#service_hotels {
+	background-image: url(../images/banners/service_hotels.jpg);
+}
+.hero_banner#service_account {
+	background-image: url(../images/banners/service_account.jpg);
+}
+.hero_banner#service_emergency {
+	background-image: url(../images/banners/service_emergency.jpg);
+}
+.hero_banner#service_travel {
+	background-image: url(../images/banners/service_leisure.jpg);
+}
+.hero_banner#service_concierge {
+	background-image: url(../images/banners/service_concierge.jpg);
+}
+.hero_banner#service_events {
+	background-image: url(../images/banners/service_events.jpg);
+}
+
+.banner__content {
+	h1 {
+		font-size: 60px;
+		font-family: $butler_font;
+		line-height: 0.9;
+		margin-top: 10px;
+	}
+	h2 {
+		font-size: 28px;
+		letter-spacing: 8px;
+		padding: 0;
+		margin-bottom: 5px;
+	}
+	h3 {
+		font-size: 16px;
+		letter-spacing: 0.2px;
+		text-transform: capitalize;
+	}
+	p {
+		font-family: $title_font;
+		font-size: 20px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	span.tagline {
+		font-size: 26px;
+		text-transform: uppercase;
+		clear: both;
+		display: block;
+		padding: 10px 110px 25px;
+		font-family: $title_font;
+	}
+	a.cta {
+		color: white;
+		border-color: white;
+		font-size: 18px;
+		margin-top: 35px;
+	}
+	
+}
+
+.hero_banner.about_banner .banner__content a.cta,
+.hero_banner.service_banner .banner__content a.cta {
+	color: $black;
+	font-size: 16px;
+}
+
+
+// Service banners
+.hero_banner.service_banner .banner__content a {
+	background: white;
+	border: none;
+	color: rgba(0, 0, 0, 0.9);
+	padding: 15px 30px;
+	margin-top: 40px;
+}
+.hero_banner.service_banner .banner__content a:hover {
+	background: $light_blue;
+	color: white;
+}
+// Contact Banner 
+.contact_banner {
+	border-top: 1px solid $border_light_grey;
+	border-bottom: none;
+	// border: none;
+	overflow: hidden;
+	padding: 50px 0;
+	text-align: center;
+}
+.contact_banner h3 {
+	color: $black;
+	font-size: 34px;
+	letter-spacing: 3px;
+	padding: 20px 0 25px;
+}
+
+
+
+@include respond-to(tablet) {
+	.hero_banner {
+		max-width: 100%;
+		min-height: auto;
+	}
+	.banner__content {
+		width: 100%;
+	}
+	.banner__content img {
+		width: 260px;
+		margin-bottom: 10px;
+	}
+}
+
+@include respond-to(mobile) {
+
+
+	.hero_banner {
+		max-width: 100%;
+		min-height: auto;
+		padding: 50px 0;
+	}
+
+	.banner__content {
+		width: 100%;
+	}
+
+	.banner__content {
+		h1 {
+			font-size: 40px;
+			letter-spacing: 0;
+		}
+		h2 {
+			letter-spacing: 0;
+		}
+		span.tagline {
+			font-size: 22px;
+			
+			padding: 10px 0 25px;
+			
+			br {
+				display: none;
+			}
+		}
+	}
+
+	// Contact Banner 
+	.footer_logo {
+	    width: 160px;
+	    display: inline-block;
+	}
+	.contact_banner h3 {
+		font-size: 24px;
+		letter-spacing: 2.5px;
+	}
+	.hero_slideshow .owl-carousel .owl-item img.banner_logo {
+		width: 70%;
+	}
+}
+
+
+.hero_slideshow .owl-carousel .owl-item img.banner_logo {
+  display: block;
+  margin: 0 auto;
+}
