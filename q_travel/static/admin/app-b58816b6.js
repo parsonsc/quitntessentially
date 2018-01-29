@@ -1,0 +1,1 @@
+(function(){define(["angular","ctrl/edit","ng-flow","dir/selectize","dir/geocode","dir/imguploader","dir/richtext","dir/states","bs-form"],function(i,r){var t;return t=i.module("adminApp",["flow","schemaForm"]),i.module("adminApp").controller("EditCtrl",r),t.init=function(){return i.bootstrap(document,["adminApp"])},t})}).call(this);

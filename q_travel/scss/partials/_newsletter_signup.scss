@@ -1,0 +1,214 @@
+// Newsletter
+.newsletter_header {
+    padding-bottom: 50px;
+    text-align: center;
+}
+.newsletter_header h1 {
+    margin-bottom: 0;
+}
+.newsletter_header p {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+// Form
+#subscribe-form select {
+    border: 1px solid #cccccc;
+    height: 42px;
+    padding: 10px 16px;
+    font-size: 15px;
+    line-height: 1.33;
+    border-radius: 0px;
+    color: #e2e2df;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    outline: #1a4055;
+
+}
+#subscribe-form select:focus,
+#subscribe-form select:visited {
+    color: #797979;
+    outline: #e2e2df;
+}
+
+// Newsletter Options
+.newsletter_options {
+    overflow: hidden;
+    clear: both;
+    padding-top: 60px;
+}
+.newsletter_header {
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+.newsletter_header p {
+    font-style: italic;
+}
+.newsletter_banner {
+    padding: 35px 0 0;
+}
+.newsletter_options ul li {
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block; 
+}
+
+.newsletter_options ul li.travel {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.newsletter_options ul li .checkbox label {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    padding-left: 55px; 
+    height: 50px;
+    color: #6c6c60;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 40px;
+    font-family: 'Georgia';
+}
+    
+.newsletter_options ul li .checkbox label:before {  
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;  
+    left: 0;
+}
+    
+.newsletter_options ul li .checkbox input[type=checkbox] {  
+    display: none;  
+}
+
+.newsletter_options ul li .checkbox label:before {
+    background: url('../img/newsletter/checkbox_sprite.png') 0 -40px no-repeat;
+}
+    
+.newsletter_options ul li .checkbox input[type=checkbox]:checked + label:before {  
+    background: url('../img/newsletter/checkbox_sprite.png') 0 0px no-repeat;  
+} 
+
+// newsletter Options Save
+.newsletter_options_save {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 35px;
+}
+.newsletter_options_save a {
+    background: #1a4055;
+    color: white;
+    font-size: 20px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: "gillsans", Helvetica, Arial, sans-serif;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: white;
+        background: #fe8f8c;
+        outline: none;
+    }
+}
+
+.newsletter_options_save .saved_banner p {
+    padding: 25px;
+    width: 100%;
+    margin: 35px 0 0;
+    color: #fe8f8c;
+    font-size: 18px;
+}
+
+
+// newsletter sidebar
+.newsletter_form_sidebar .form-group {
+    overflow: hidden;
+}
+.newsletter_form_sidebar#subscribe-form select {
+    border: 1px solid #cccccc;
+    height: 31px;
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 1.33;
+    border-radius: 0px;
+    color: #e2e2df;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    outline: #1a4055;
+    width: 100%;
+}
+.newsletter_form_sidebar#subscribe-form  .selectbox select {
+    float: left;
+    width: 28%;
+    margin-right: 2%;
+}
+.newsletter_form_sidebar .selectbox input {
+    float: left;
+    width: 70%;
+}
+.cta-wrap ul li:hover .cta-info {
+
+    top: -100px!important;
+}
+
+
+@media (max-width: 1300px) {
+    .newsletter_options ul li .option {
+        height: 340px; 
+    }
+    .newsletter-signup-box form .form-group {
+        margin-bottom: 5px!important;
+    } 
+    .newsletter-signup-box button[type=submit] {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 667px) {
+    .newsletter_options {
+        padding-top: 0px;
+    }
+    .newsletter_options ul li {
+        width: 48%;
+        margin-bottom: 15px;
+    }
+    .newsletter_options ul li.travel {
+        text-align: left;
+    }
+    .newsletter_options ul li .checkbox label {
+        padding-left: 45px; 
+        height: 50px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .newsletter_options ul li .checkbox label:before {  
+        content: "";
+        width: 30px;
+        height: 30px;
+    }
+
+    .newsletter_options ul li .checkbox label:before {
+        background: url('../img/newsletter/checkbox_sprite.png') 0 -30px no-repeat;
+        background-size: 30px;
+    }
+        
+    .newsletter_options ul li .checkbox input[type=checkbox]:checked + label:before {  
+        background-size: 30px; 
+    } 
+    .newsletter_options_save a {
+        font-size: 28px;
+        padding: 10px 0;
+        display: block;
+        margin-top: 20px;
+    }
+
+
+    // Newsletter signup box
+    .newsletter-signup-box {
+        padding: 32px!important;
+    }
+   
+}
