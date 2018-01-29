@@ -1,0 +1,1290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Newsletter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/fonts.css?v=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css?v=3.3.6">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slider-pro.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/lightgallery.css">
+    <link rel="stylesheet" href="css/main.css?v=1.0">
+    <link rel="stylesheet" href="css/media-lg.css">
+    <link rel="stylesheet" href="css/media-md.css">
+    <link rel="stylesheet" href="css/media-sm.css">
+    <link rel="stylesheet" href="css/media-xs.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+
+    <style>
+        .parallax.newsletter {
+            min-height: 400px;
+        }
+        .newsleter-signup-message p.small-info{
+            color: #a9a9a9;
+        }
+        .newsletter .newsleter-signup-message .checkbox {
+            float: right;
+            width: 100%;
+        }
+        .newsletter .newsleter-signup-message .checkbox input + label:before {
+            border: 1px solid #fff;
+        }
+        .newsletter .newsleter-signup-message .checkbox label {
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: white;
+        }
+        .newsleter-signup-message {
+            text-align: center;
+        }
+        .newsleter-signup-message p {
+
+            width: 100%;
+            float: none;
+            margin-bottom: 20px;
+        }
+        .background-with-image span {
+            float: none;
+        }
+         .newsletter .inline-list li {
+            margin-right: 5%;
+            width: 47.5%;
+        }
+        .newsletter .inline-list li:nth-child(even) {
+            margin-right: 0;
+        }
+        .newsletter .checkbox {
+            margin: 0;
+        }
+        .newsletter .checkbox label {          
+            font-family: 'Futura Std Book';
+            font-size: 14px;
+            color: #6c6c6c;
+            letter-spacing: 0.00em;
+            line-height: 25px;
+            margin: 0 0 5px;
+            padding-left: 25px;
+        }
+        .newsletter .checkbox input + label:before {
+           /*border-color: #e3e3d2;*/
+        }
+        .checkbox input:checked + label:before {
+            background-color: #c7c8a6;
+            border: 1px solid #000;
+        }
+        
+        .newsletter .checkbox input + label:before {
+            margin-top: 7px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: -25px;
+        }
+        
+        .newsletter.box-grid {
+            margin-top: -120px;
+            margin-bottom: 0px;
+        }
+        .newsletter .template-lifestyle {
+            top: 40%;
+        }
+        .newsletter .icon-plus {
+            display: none;
+        }
+
+        .newsletter_checkbox {
+            position: absolute;
+            left: 20px;
+            bottom: -75px;
+        }
+        .newsletter_checkbox.checkbox input + label:before {
+            border: 1px solid #fff;
+        }
+        .newsletter_checkbox.checkbox label {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.100em;
+            /*font-size: 20px;*/
+        }
+        .newsletter .newsletter_title_checkbox label {
+            font-size: 18px;
+        }
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            
+            .card.zoom.image-zoom .icon-plus,
+            .card.zoom.image-zoom.chosen .img-overlay {
+                display: none;
+            }
+
+        }
+        @media screen and (max-width: 767px){
+            .parallax.newsletter {
+                min-height: 550px;
+            }
+            .template-lifestyle {               
+                top: 40%;    
+            }
+            .card.zoom.image-zoom.chosen .img-overlay {
+                display: none;
+            }
+            .newsleter-signup-message {
+                margin: 0;
+            }
+            .newsletter .background-with-image span {
+                font-size: 22px;
+                line-height: 30px;
+                margin-top: 30px;
+            }
+            .newsletter .background-with-image span {
+                font-size: 20px;
+
+                margin-top: 0px;
+            }
+             .newsletter .icon-plus {
+                display: none!important;
+            }
+        }
+    </style>
+</head>
+
+<body class="logged-in">
+    <!--Header-->
+    <header class="header">
+        <section class="site-header">
+            <a href="#" class="logo brand" title="QuintEssentially">
+                <img src="images/logo.svg" alt="Logo Description">
+            </a>
+            <nav class="navigation" role="navigation">
+                <ul class="primary hidden-xs hidden-sm">
+                    <li>
+                        <a href="#" title="Private membership">Private membership</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Corporate">Corporate</a>
+                    </li>
+                    <li>
+                        <a href="#" title="About Q">About Q</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Media">Media</a>
+                    </li>
+                </ul>
+                <ul class="quick">
+                    <li class="menu">
+                        <a href="#" class="full-screen-toggle" data-site-menu="toggle" data-toggle="tab" data-target="#menu-content-tab" role="button">
+                            <i class="icon-hamburger"></i>
+                        </a>
+                    </li>
+                    <li class="video hidden-xs hidden-sm hidden-md">
+                        <a href="https://www.youtube.com/watch?v=V5IunAUcm5E" class="icon-video-player" role="button"></a>
+                    </li>
+                    <li class="contact hidden-xs hidden-sm hidden-md">
+                        <a href="#" class="icon-circle-phone" role="button" data-toggle="tab" data-target="" data-site-menu="toggle"></a>
+                    </li>
+                </ul>
+                <ul class="socials hidden-xs hidden-sm hidden-md">
+                    <li>
+                        <a href="#" class="icon-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon-twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon-google-plus"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon-pinterest"></a>
+                    </li>
+                </ul>
+                <ul class="user hidden-xs hidden-sm hidden-md">
+                    <li class="logout">
+                        <a href="home-nonloggedin.html">Log Out</a>
+                    </li>
+                    <li class="profile">
+                        <span class="area">
+                            <a href="my-q.html" title="My Q" class="account">My Q</a>
+                            <div class="info">
+                                <span>Welcome,</span><em><a href="editors-profile.html">Joe Bloggs</a></em>
+                        </div>
+                        </span>
+                    </li>
+                </ul>
+
+                <nav class="hide sub-menu hidden-xs hidden-sm hidden-md">
+                    <ul>
+                        <li>
+                            <a href="newsletter.html">Lifestyle & Concierge</a>
+                            <ul class="main-nav hidden-xs hidden-sm">
+                                <li>
+                                    <a href="newsletter.html" title="Lifestyle & Concierge">Lifestyle & Concierge</a>
+                                </li>
+                                <li>
+                                    <a href="private-member-manage.html" title="Travel">Travel</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Retail">Retail</a>
+                                </li>
+                                <li>
+                                    <a href="template-3.html" title="Events">Events</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Weddings">Weddings</a>
+                                </li>
+                                <li>
+                                    <a href="template-1.html" title="Media">Media</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="private-member-manage.html">Travel</a>
+                        </li>
+                        <li>
+                            <a href="#">Retail</a>
+                        </li>
+                        <li>
+                            <a href="template-3.html">Events</a>
+                        </li>
+                        <li>
+                            <a href="#">Weddings</a>
+                        </li>
+                        <li>
+                            <a href="template-1.html">Media</a>
+                        </li>
+                    </ul>
+                </nav>
+            </nav>
+        </section>
+        <section class="site-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                        <div class="tab-content">
+                            <div id="menu-content-tab" class="menu-content-panel tab-pane fade in active">
+                                <div class="area centered">
+                                    <section class="menu-content">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <ul class="user hidden-sm hidden-md hidden-lg">
+                                                    <li class="info">
+                                                        <span>Welcome,</span><em>Joe Bloggs</em></li>
+                                                    <li class="my-q"><a href="#" title="My Q">My Q</a></li>
+                                                    <li class="logout">
+                                                        <a href="/home-nonloggedin.html" title="Log Out">Log    Out</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <fieldset class="form-search" role="form">
+                                                    <label class="field-group row-indent">
+                                                        <input name="search" type="text" placeholder="Search">
+                                                        <button class="button search-submit" type="submit"></button>
+                                                    </label>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <span class="icon-left-open-big hidden-sm hidden-md hidden-lg" data-menu-control="backwards" data-visibility="false" data-current-level=""></span>
+                                                <section class="mobile-nav hidden-sm hidden-md hidden-lg" data-current-level="0" data-current-sub-level="0">
+                                                    <nav data-menu-level="0">
+                                                        <ul>
+                                                            <li class="parent" data-sub-level="0">
+                                                                <a href="private-member.html" title="Private Membership">Private Membership</a>
+                                                                <i class="icon-right-open-big"></i>
+                                                            </li>
+                                                            <li class="parent" data-sub-level="1">
+                                                                <a href="#" title="Corporate">Corporate</a>
+                                                                <i class="icon-right-open-big"></i>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" title="About">About Q</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" title="Services">Services</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" title="Media">Media</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                    <nav data-menu-level="1">
+                                                        <ul data-sub-level="0" data-visible="false">
+                                                            <li class="parent" data-sub-level="0"><a href="#">Lifestyle</a>
+                                                                <i class="icon-right-open-big"></i>
+                                                            </li>
+                                                            <li><a href="#">Travel</a>
+                                                            </li>
+                                                            <li><a href="#">Retail</a>
+                                                            </li>
+                                                            <li><a href="#">Events</a>
+                                                            </li>
+                                                            <li><a href="#">Wedding</a>
+                                                            </li>
+                                                            <li><a href="#">Media</a>
+                                                            </li>
+                                                        </ul>
+                                                        <ul data-sub-level="1" data-visible="false">
+                                                            <li><a href="#" title="Driven">Driven</a>
+                                                            </li>
+                                                            <li><a href="#" title="Education">Education</a>
+                                                            </li>
+                                                            <li><a href="#" title="Wine">Wine</a>
+                                                            </li>
+                                                            <li><a href="#" title="Foundation">Foundation</a>
+                                                            </li>
+                                                            <li><a href="#" title="Gifts">Gifts</a>
+                                                            </li>
+                                                            <li><a href="#" title="Estates">Estates</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                    <nav data-menu-level="2">
+                                                        <ul data-sub-level="0" data-visible="false">
+                                                            <li><a href="#" title="Driven">Driven</a>
+                                                            </li>
+                                                            <li><a href="#" title="Education">Education</a>
+                                                            </li>
+                                                            <li><a href="#" title="Wine">Wine</a>
+                                                            </li>
+                                                            <li><a href="#" title="Foundation">Foundation</a>
+                                                            </li>
+                                                            <li><a href="#" title="Gifts">Gifts</a>
+                                                            </li>
+                                                            <li><a href="#" title="Estates">Estates</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-7">
+                                                <section class="q-services">
+                                                    <h2 class="uppercase panel-title" data-toggle="collapse" data-target="#q-services-panel" data-media-xs="collapse">Q Services<i class="icon-toggle"></i></h2>
+                                                    <div id="q-services-panel" class="panel-collapse collapse in">
+                                                        <div class="row">
+                                                            <div class="col-xs-6 col-sm-12 col-md-6">
+                                                                <ul>
+                                                                    <li><a href="#">Lifestyle</a>
+                                                                    </li>
+                                                                    <li><a href="#">Travel</a>
+                                                                    </li>
+                                                                    <li><a href="#">Retail</a>
+                                                                    </li>
+                                                                    <li><a href="#">Events</a>
+                                                                    </li>
+                                                                    <li><a href="#">Wedding</a>
+                                                                    </li>
+                                                                    <li><a href="#">Media</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-xs-6 col-sm-12 col-md-6">
+                                                                <ul>
+                                                                    <li><a href="#" title="Driven">Driven</a>
+                                                                    </li>
+                                                                    <li><a href="#" title="Education">Education</a>
+                                                                    </li>
+                                                                    <li><a href="#" title="Wine">Wine</a>
+                                                                    </li>
+                                                                    <li><a href="#" title="Foundation">Foundation</a>
+                                                                    </li>
+                                                                    <li><a href="#" title="Gifts">Gifts</a>
+                                                                    </li>
+                                                                    <li><a href="#" title="Estates">Estates</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                            <div class="col-sm-6 col-md-5">
+                                                <section class="contact-details">
+                                                    <h2 class="uppercase panel-title" data-toggle="collapse" data-target="#contact-us-panel" data-media-xs="collapse">Contact us
+                                                        <i class="icon-toggle"></i></h2>
+                                                    <div id="contact-us-panel" class="panel-collapse collapse in">
+                                                        <address class="vcard">
+                                                            <span class="address">
+                                                                <span class="street-address">29 Portland Place</span>
+                                                            <span class="locality">London</span>
+                                                            <span class="postal-code">94301</span>
+                                                            </span>
+                                                            <span class="tel">+44(0) 203 073 6714</span>
+                                                            <span class="mail">info@quintessentially.com</span>
+                                                        </address>
+                                                        <div class="select dropdown address-location">
+                                                            <label class="dropdown-toggle" data-toggle="dropdown">
+                                                                <input name="select1" class="selected-value" type="text" placeholder="Change Location" readonly> <i class="icon-down-open-big"></i>
+                                                            </label>
+                                                            <ul class="dropdown-menu">
+                                                                <li class="selected" data-value="London">London</li>
+                                                                <li data-value="New York">New York</li>
+                                                                <li data-value="Athenes">Athenes</li>
+                                                                <li data-value="Los Angeles">Los Angeles</li>
+                                                                <li data-value="Paris">Paris</li>
+                                                                <li data-value="Barcelona">Barcelona</li>
+                                                                <li data-value="Saudia Arabia">Saudia Arabia</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <nav class="social-media light-gold pull-left hidden-lg">
+                                                        <ul class="social-list">
+                                                            <li>
+                                                                <a href="#" title="Facebook" class="icon-facebook"></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" title="Twitter" class="icon-twitter"></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" title="Google Plus" class="icon-google-plus"></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" title="Pintrest" class="icon-pinterest"></a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <div class="parallax intro background-image-newsletter newsletter">
+        <div class="template-lifestyle">
+            <div class="container" style="position: relative;">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="background-with-image newsletter-header">
+                          <!--   <p class="welcome-txt">WELCOME TO</p>
+                            <p class="welcome-title">QUINTESSENTAILY</p>
+                            <div class="newsletter-quote">
+                                <p>Quintessentially transformed the idea of Concierge Services into Lifestyle Managment</p>
+                                <p class="newsletter-autor">THE NEW YORK TIMES</p>
+                            </div> -->
+                            <div class="newsleter-signup-message clearfix">
+                                <p><span class="">SIGNUP TO OUR NEWSLETTERS</span></p>                                
+                                <p class="small-info">Thank you for signing up to the Quintessentially Newsletter. Please select all of the Quintessentially areas of interest outlined below, which you would like us to update you on. You can amend or unsubscribe from these as and when your preferences change.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkbox newsletter_checkbox newsletter_title_checkbox">
+                    <input id="checkbox-qn" name="checkbox-qn" type="checkbox" title="general" checked>
+                    <label for="checkbox-qn">Quintessentially Newsletter</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Main Content-->
+    <main class="content">
+        <div class="container">
+            <div class="row">
+                <section class="newsletter box-grid">
+                    <div class="newsletter-number">
+                        <span>7</span>
+                    </div>
+                    <div class="card zoom image-zoom col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="newsletter-image-container hidden-xs hidden-sm">
+                            <img src="images/newsletter/travel.jpg" alt="Q Travel">
+                        </div>
+                        <div class="promo-block-content">
+                            <div class="img-overlay">
+                                <div class="chosen-box">
+                                    <div class="icon-chosen"></div>
+                                </div>
+                            </div>
+                            <p class="promo-title">Q TRAVEL </p>
+                            <div>
+                              <!-- Checkbox Default -->
+                              <ul class="inline-list">
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-travel-general" name="checkbox-travel-general" type="checkbox" title="general">
+                                    <label for="checkbox-travel-general">General</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-adventure" name="checkbox-adventure" type="checkbox" title="Adventure">
+                                    <label for="checkbox-adventure">Adventure</label>
+                                  </div>
+                                </li>                               
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-villas" name="checkbox-villas" type="checkbox" title="Villas">
+                                    <label for="checkbox-villas">Villas</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-ski" name="checkbox-ski" type="checkbox" title="Ski">
+                                    <label for="checkbox-ski">Ski</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-couples" name="checkbox-couples" type="checkbox" title="Couples">
+                                    <label for="checkbox-couples">Couples</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-beach" name="checkbox-beach" type="checkbox" title="Beach">
+                                    <label for="checkbox-beach">Beach</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-city" name="checkbox-city" type="checkbox" title="City breaks">
+                                    <label for="checkbox-city">City breaks</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-jet" name="checkbox-jet" type="checkbox" title="Jet Plane">
+                                    <label for="checkbox-jet">Jet Plane</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-families" name="checkbox-families" type="checkbox" title="Familes ">
+                                    <label for="checkbox-families">Families </label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-driving" name="checkbox-driving" type="checkbox" title="Driving">
+                                    <label for="checkbox-driving">Driving</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-foodwine" name="checkbox-foodwine" type="checkbox" title="Food and Wine">
+                                    <label for="checkbox-foodwine">Food and Wine</label>
+                                  </div>                          
+                                </li>
+                                 <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-spa" name="checkbox-spa" type="checkbox" title="Wellness and Spa">
+                                    <label for="checkbox-spa">Wellness and Spa</label>
+                                  </div>
+                                </li>
+                                <!-- <button id="next">Show More</button> -->
+                              </ul>
+                            </div>
+                            <p class="icon white icon-plus"></p>
+                        </div>
+                    </div>
+                  
+                    <div class="card zoom image-zoom col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="newsletter-image-container hidden-xs hidden-sm">
+                        <img src="images/newsletter/estates.jpg" alt="Q Estates">
+                        </div>
+                        <div class="promo-block-content">
+                            <div class="img-overlay">
+                                <div class="chosen-box">
+                                    <div class="icon-chosen"></div>
+                                </div>
+                            </div>
+                            <p class="promo-title">Q ESTATES</p>
+                            <div>
+                                <!-- Checkbox Default -->
+                                <ul class="inline-list">
+                                    <li>
+                                      <div class="checkbox">
+                                        <input id="checkbox-estate-general" name="checkbox-estate-general" type="checkbox" title="general">
+                                        <label for="checkbox-estate-general">General</label>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="checkbox">
+                                        <input id="checkbox-vendors" name="checkbox-vendors" type="checkbox" title="Vendors">
+                                        <label for="checkbox-vendors">Vendors</label>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="checkbox">
+                                        <input id="checkbox-19" name="checkbox-19" type="checkbox" title="Landlords/Tenants">
+                                        <label for="checkbox-19">Landlords &amp; Tenants</label>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="checkbox">
+                                        <input id="checkbox-developeragents" name="checkbox-developeragents" type="checkbox" title="Developers/Agents">
+                                        <label for="checkbox-developeragents">Developers &amp; Agents</label>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="checkbox">
+                                        <input id="checkbox-buyers" name="checkbox-buyers" type="checkbox" title="Buyers">
+                                        <label for="checkbox-buyers">Buyers</label>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="checkbox">
+                                        <input id="checkbox-pro" name="checkbox-pro" type="checkbox" title="Professionals/Corporates">
+                                        <label for="checkbox-pro">Professionals &amp; Corporates</label>
+                                      </div>
+                                    </li>                        
+                                </ul>
+                            </div>
+                            <p class="icon white icon-plus"></p>
+                        </div>
+                    </div>
+                    <div class="card zoom image-zoom col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="newsletter-image-container hidden-xs hidden-sm">
+                        <img src="images/newsletter/events.jpg" alt="Q Events">
+                        </div>
+                        <div class="promo-block-content">
+                            <div class="img-overlay">
+                                <div class="chosen-box">
+                                    <div class="icon-chosen"></div>
+                                </div>
+                            </div>
+                            <p class="promo-title">Q EVENTS</p>
+                            <ul class="inline-list">
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-events-general" name="checkbox-events-general" type="checkbox" title="general">
+                                    <label for="checkbox-events-general">General</label>
+                                  </div>
+                                </li>
+                                 <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-anniversaries" name="checkbox-anniversaries" type="checkbox" title="Anniversaries">
+                                    <label for="checkbox-anniversaries">Anniversaries</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-activations" name="checkbox-activations" type="checkbox" title="Corporate Launches/Activations">
+                                    <label for="checkbox-activations">Corporate Launches &amp; Activations</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-celebrations" name="checkbox-celebrations" type="checkbox" title="Corporate Dinners/Celebrations">
+                                    <label for="checkbox-celebrations">Corporate Dinners &amp; Celebrations</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-birthday" name="checkbox-birthday" type="checkbox" title="Birthday Parties and Bat/Bar Mitzva">
+                                    <label for="checkbox-birthday">Birthday Parties &amp; Bat/Bar Mitzva</label>
+                                  </div>
+                                </li>
+                                                  
+                                
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-experiences" name="checkbox-experiences" type="checkbox" title="Experiences">
+                                    <label for="checkbox-experiences">Experiences</label>
+                                  </div>
+                                </li>                        
+                            </ul>
+                            <p class="icon white icon-plus"></p>
+                        </div>
+                    </div>
+                    <div class="card zoom image-zoom col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="newsletter-image-container hidden-xs hidden-sm">
+                        <img src="images/newsletter/foundation.jpg" alt="Q Foundation">
+                        </div>
+                        <div class="promo-block-content">
+                            <div class="img-overlay">
+                                <div class="chosen-box">
+                                    <div class="icon-chosen"></div>
+                                </div>
+                            </div>
+                            <p class="promo-title">Q FOUNDATION </p>
+                            <ul class="inline-list">
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-foundation-general" name="checkbox-foundation-general" type="checkbox" title="general">
+                                    <label for="checkbox-foundation-general">General</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-philanthropy" name="checkbox-philanthropy" type="checkbox" title="general">
+                                    <label for="checkbox-philanthropy">Philanthropy </label>
+                                  </div>
+                                </li>
+                                 <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-luxury" name="checkbox-luxury" type="checkbox" title="general">
+                                    <label for="checkbox-luxury">Luxury Events </label>
+                                  </div>
+                                </li>
+                                 <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-networking" name="checkbox-networking" type="checkbox" title="general">
+                                    <label for="checkbox-networking">networking </label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-innovation" name="checkbox-innovation" type="checkbox" title="general">
+                                    <label for="checkbox-innovation">innovation </label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-challenges" name="checkbox-challenges" type="checkbox" title="general">
+                                    <label for="checkbox-challenges">Challenges </label>
+                                  </div>
+                                </li>
+                                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card zoom image-zoom col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="newsletter-image-container hidden-xs hidden-sm">
+                        <img src="images/newsletter/weddings.jpg" alt="Q Weddings">
+                        </div>
+                        <div class="promo-block-content">
+                            <div class="img-overlay">
+                                <div class="chosen-box">
+                                    <div class="icon-chosen"></div>
+                                </div>
+                            </div>
+                            <p class="promo-title">Q WEDDINGS</p>
+                            <ul class="inline-list">
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-wedding-general" name="checkbox-wedding-general" type="checkbox" title="general">
+                                    <label for="checkbox-wedding-general">General</label>
+                                  </div>
+                                </li>
+                                 <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-honeymoons" name="checkbox-honeymoons" type="checkbox" title="Honeymoons">
+                                    <label for="checkbox-honeymoons">Honeymoons</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-cakes" name="checkbox-cakes" type="checkbox" title="Wedding Cakes">
+                                    <label for="checkbox-cakes">Wedding Cakes</label>
+                                  </div>
+                                </li>
+                               
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-destinationweddings" name="checkbox-destinationweddings" type="checkbox" title="Desitnation Weddings">
+                                    <label for="checkbox-destinationweddings">Destination Weddings</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-dresses" name="checkbox-dresses" type="checkbox" title="Wedding Dresses">
+                                    <label for="checkbox-dresses">Wedding Dresses</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-tablescapes" name="checkbox-tablescapes" type="checkbox" title="Table Scapes">
+                                    <label for="checkbox-tablescapes">Table Scapes</label>
+                                  </div>
+                                </li>                        
+                            </ul>
+                            <p class="icon white icon-plus"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="card zoom image-zoom col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="newsletter-image-container hidden-xs hidden-sm">
+                        <img src="images/newsletter/gifts.jpg" alt="Q Gifts">
+                        </div>
+                        <div class="promo-block-content">
+                            <div class="img-overlay">
+                                <div class="chosen-box">
+                                    <div class="icon-chosen"></div>
+                                </div>
+                            </div>
+                            <p class="promo-title">Q GIFTS</p>
+                           <ul class="inline-list">
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-gifts-general" name="checkbox-gifts-general" type="checkbox" title="general">
+                                    <label for="checkbox-gifts-general">General</label>
+                                  </div>
+                                </li>
+                                
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-watches" name="checkbox-watches" type="checkbox" title="Landlords/Tenants">
+                                    <label for="checkbox-watches">Watches</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-jewellery" name="checkbox-jewellery" type="checkbox" title="Developers/Agents">
+                                    <label for="checkbox-jewellery">Jewellery</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-bags" name="checkbox-bags" type="checkbox" title="Buyers">
+                                    <label for="checkbox-bags">Bags</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-fashion" name="checkbox-fashion" type="checkbox" title="Professionals/Corporates">
+                                    <label for="checkbox-fashion">Fashion</label>
+                                  </div>
+                                </li>         
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-sourced" name="checkbox-sourced" type="checkbox" title="Vendors">
+                                    <label for="checkbox-sourced">Recently Sourced</label>
+                                  </div>
+                                </li>               
+                            </ul>
+                            <p class="icon white icon-plus"></p>
+                        </div>
+                    </div>
+                    <div class="card zoom image-zoom col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="newsletter-image-container hidden-xs hidden-sm">
+                        <img src="images/newsletter/people.jpg" alt="Q People">
+                        </div>
+                        <div class="promo-block-content">
+                            <div class="img-overlay">
+                                <div class="chosen-box">
+                                    <div class="icon-chosen"></div>
+                                </div>
+                            </div>
+                            <p class="promo-title">Q PEOPLE</p>
+                            <ul class="inline-list">
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-people-general" name="checkbox-people-general" type="checkbox" title="general">
+                                    <label for="checkbox-people-general">General</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-crew" name="checkbox-crew" type="checkbox" title="Yacht and Aircraft Crew">
+                                    <label for="checkbox-crew">Yacht and Aircraft Crew</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-housestaff" name="checkbox-housestaff" type="checkbox" title="Private Household & Estate Staffing">
+                                    <label for="checkbox-housestaff">Private Household &amp; Estate Staffing</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-chefs" name="checkbox-chefs" type="checkbox" title="Chefs & Healthy Living">
+                                    <label for="checkbox-chefs">Chefs &amp; Healthy Living</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-admin" name="checkbox-admin" type="checkbox" title="PA & Admin Support Staffing/Services">
+                                    <label for="checkbox-admin">PA &amp; Admin Support Staffing Services</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-professionals" name="checkbox-professionals" type="checkbox" title="Professionals/Corporates">
+                                    <label for="checkbox-professionals">Professionals &amp; Corporates</label>
+                                  </div>
+                                </li>                        
+                            </ul>
+                            <p class="icon white icon-plus"></p>
+                        </div>
+                    </div>
+                    <div class="card zoom image-zoom col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="newsletter-image-container hidden-xs hidden-sm">
+                        <img src="images/newsletter/education.jpg" alt="Q education">
+                        </div>
+                        <div class="promo-block-content">
+                            <div class="img-overlay">
+                                <div class="chosen-box">
+                                    <div class="icon-chosen"></div>
+                                </div>
+                            </div>
+                            <p class="promo-title">Q EDUCATION</p>
+                            <ul class="inline-list">
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-education-general" name="checkbox-education-general" type="checkbox" title="general">
+                                    <label for="checkbox-education-general">General</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-earlyyears" name="checkbox-earlyyears" type="checkbox" title="Early Years">
+                                    <label for="checkbox-earlyyears">Early Years</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-schools" name="checkbox-schools" type="checkbox" title="Schools">
+                                    <label for="checkbox-schools">Schools</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-uni" name="checkbox-uni" type="checkbox" title="Universities">
+                                    <label for="checkbox-uni">Universities</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-tuition" name="checkbox-tuition" type="checkbox" title="Private Tuition">
+                                    <label for="checkbox-tuition">Private Tuition</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-course" name="checkbox-course" type="checkbox" title="Course Finding Services">
+                                    <label for="checkbox-course">Course Finding Services</label>
+                                  </div>
+                                </li>                        
+                            </ul>
+                            <p class="icon white icon-plus"></p>
+                        </div>
+                    </div>
+                    <div class="card zoom image-zoom col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="newsletter-image-container hidden-xs hidden-sm">
+                        <img src="images/newsletter/restaurants.jpg" alt="Q Restaurants">
+                        </div>
+                        <div class="promo-block-content">
+                            <div class="img-overlay">
+                                <div class="chosen-box">
+                                    <div class="icon-chosen"></div>
+                                </div>
+                            </div>
+                            <p class="promo-title">Q RESTAURANT </p>
+                            <ul class="inline-list">
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-restaurant-general" name="checkbox-restaurant-general" type="checkbox" title="general">
+                                    <label for="checkbox-restaurant-general">General</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-popups" name="checkbox-popups" type="checkbox" title="Pop-Ups">
+                                    <label for="checkbox-popups">Pop-Ups</label>
+                                  </div>
+                                </li>
+                               
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-events" name="checkbox-events" type="checkbox" title="Events">
+                                    <label for="checkbox-events">Events</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-benefits" name="checkbox-benefits" type="checkbox" title="Benefits">
+                                    <label for="checkbox-benefits">Benefits</label>
+                                  </div>
+                                </li>     
+                                 <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-openings" name="checkbox-openings" type="checkbox" title="New Openings">
+                                    <label for="checkbox-openings">New Openings</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="checkbox">
+                                    <input id="checkbox-news" name="checkbox-news" type="checkbox" title="News and Reviews">
+                                    <label for="checkbox-news">News and Reviews</label>
+                                  </div>
+                                </li>                   
+                            </ul>
+                            <p class="icon white icon-plus"></p>
+                        </div>
+                    </div>                   
+                  
+                </section>
+                <div class="articles-button-holder">
+                    <a href="#" class="dark">Save</a>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Site Footer-->
+    <footer class="site-footer">
+        <div class="container footer-links">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                            <h3>QUINTESSENTIALLY SERVICE</h3>
+                        </div>
+                        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                            <section class="left nav-links">
+                                <ul>
+                                    <li><a href="#">Lifestyle</a>
+                                        <li><a href="#">Travel</a>
+                                        </li>
+                                        <li><a href="#">Flowers</a>
+                                        </li>
+                                        <li><a href="#">Events</a>
+                                        </li>
+                                        <li><a href="#">Q&Co.</a>
+                                        </li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Wine</a>
+                                    </li>
+                                    <li><a href="#">Education</a>
+                                    </li>
+                                    <li><a href="#">Foundation</a>
+                                    </li>
+                                    <li><a href="#">Gifts</a>
+                                    </li>
+                                    <li><a href="#">Estates</a>
+                                    </li>
+                                    <li><a href="#">Driven</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                            <h3>OUR GLOBAL OFFICES</h3>
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                            <section class="right nav-links">
+                                <ul>
+                                    <li><a href="#">London</a>
+                                    </li>
+                                    <li><a href="#">New York</a>
+                                    </li>
+                                    <li><a href="#">Athenes</a>
+                                    </li>
+                                    <li><a href="#">Loas Angeles</a>
+                                    </li>
+                                    <li><a href="#">Paris</a>
+                                    </li>
+                                    <li><a href="#">Barcelona</a>
+                                    </li>
+                                    <li><a href="#">Saudi Arabia</a>
+                                    </li>
+                                    <li><a href="#">Dubai</a>
+                                    </li>
+                                    <li><a href="#">Milan</a>
+                                    </li>
+                                    <li><a href="#">London</a>
+                                    </li>
+                                    <li><a href="#">New York</a>
+                                    </li>
+                                    <li><a href="#">Athenes</a>
+                                    </li>
+                                    <li><a href="#">Loas Angeles</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">London</a>
+                                    </li>
+                                    <li><a href="#">New York</a>
+                                    </li>
+                                    <li><a href="#">Athenes</a>
+                                    </li>
+                                    <li><a href="#">Loas Angeles</a>
+                                    </li>
+                                    <li><a href="#">Paris</a>
+                                    </li>
+                                    <li><a href="#">Barcelona</a>
+                                    </li>
+                                    <li><a href="#">Saudi Arabia</a>
+                                    </li>
+                                    <li><a href="#">Dubai</a>
+                                    </li>
+                                    <li><a href="#">Milan</a>
+                                    </li>
+                                    <li><a href="#">London</a>
+                                    </li>
+                                    <li><a href="#">New York</a>
+                                    </li>
+                                </ul>
+
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-equal contact-details">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-left">
+                        <div id="footer-map"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-right">
+                        <section>
+                            <aside class="details-area">
+                                <h3>Contact</h3>
+                                <address class="vcard">
+                                    <span class="address">
+                                        <span class="street-address">29 Portland Place</span>
+                                    <span class="locality">London</span>
+                                    <span class="postal-code">94301</span>
+                                    </span>
+                                    <span class="tel">+44(0) 203 073 6714</span>
+                                    <span class="mail">info@quintessentially.com</span>
+                                </address>
+                            </aside>
+                            <div class="address-location">
+                                <div class="select dropdown light-grey">
+                                    <label class="dropdown-toggle" data-toggle="dropdown">
+                                        <input name="select1" class="selected-value" type="text" placeholder="CHANGE LOCATION" readonly> <i class="icon-down-open-big"></i>
+                                    </label>
+                                    <ul class="dropdown-menu">
+                                        <li class="selected" data-value="London">London</li>
+                                        <li data-value="New York">New York</li>
+                                        <li data-value="Athenes">Athenes</li>
+                                        <li data-value="Los Angeles">Los Angeles</li>
+                                        <li data-value="Paris">Paris</li>
+                                        <li data-value="Barcelona">Barcelona</li>
+                                        <li data-value="Saudia Arabia">Saudia Arabia</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="signup-details">
+                    <div class="col-md-12 col-lg-6">
+                        <h3>Sign up to the Quintessentailly Newsletter</h3>
+                        <p>We will keep you posted on new innovations and insights</p>
+                    </div>
+                    <div class="col-md-12 col-lg-6">
+                        <fieldset class="form-signup" role="form">
+                            <div class="row row-indent form-submit">
+                                <div class="col-xs-12">
+                                    <label class="form-field">
+                                        <input id="login-email" name="name" type="text" placeholder="Email">
+                                        <i class="field-valid icon-check"></i>
+                                    </label>
+                                </div>
+                                <button type="button" class="button submit-signup">SIGN UP</button>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="black">
+                    <div class="col-sm-10 col-md-12 col-lg-9 pull-right pull-left-sm">
+                        <nav class="footer-navigation hidden-xs" role="navigation">
+                            <ul>
+                                <li><a href="#">ABOUT</a>
+                                </li>
+                                <li><a href="#">LIFESTYLE AND CONCIERGE</a>
+                                </li>
+                                <li><a href="#">TRAVEL</a>
+                                </li>
+                                <li><a href="#">RETAILS</a>
+                                </li>
+                                <li><a href="#">EVENTS</a>
+                                </li>
+                                <li><a href="#">MEDIA</a>
+                                </li>
+                                <li><a href="#">WEDDING</a>
+                                </li>
+                                <li><a href="#">SERVICES</a>
+                                </li>
+                                <li><a href="#">CONTACT</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-md-5 col-lg-3 pull-left">
+                        <a href="#" class="logo" role="logo">
+                            <img src="images/logo-white.svg" alt="Logo Description">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-md-6 col-lg-4 col-lg-offset-9 pull-right">
+                        <nav class="social-media light-gold">
+                            <ul class="social-list">
+                                <li>
+                                    <a href="#" class="icon-rss"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="icon-facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="icon-twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="icon-google-plus"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="icon-pinterest"></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a href="#" class="back-to-top icon-up hidden-lg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Scripts-->
+    <!-- Map -->
+    <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
+    <script type="text/javascript" src="js/dark-map.js"></script>
+    <script type="text/javascript" src="js/modernizr-custom.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js?v=3.3.6"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/footer-map.js"></script>
+    <script type="text/javascript" src="js/lightgallery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(".card  li input[type=checkbox]").on('change', function () {
+                $(this).parent().parent().toggleClass("active");
+               
+
+                if ($(".card  li input:checkbox:checked").length > 0) {
+                    $(this).closest('.card').addClass("chosen");
+                } else {
+                   $(this).closest('.card').removeClass("chosen");
+                }   
+            });     
+        });
+    </script>
+  
+    <!--[if IE 9]>
+      <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+      <script type="text/javascript" src="js/jquery.columnizer.min.js"></script>
+      <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+      <script type="text/javascript" src="js/ie9.js"></script>
+    <![endif]-->
+</body>
+
+</html>
