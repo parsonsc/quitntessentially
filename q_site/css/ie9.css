@@ -1,0 +1,44 @@
+.placeholder {
+     /* WebKit, Blink, Edge */
+    /*font-family: 'Myraid Pro'*/
+    font-family: 'Futura Std Book';
+    color: #8b8b8b;
+    font-size: 15px;
+    letter-spacing: 0.200em;
+    text-align: left;
+}
+p.quotes, p.quotes-author {
+	padding: 0 30px;
+}
+
+
+/**/
+
+.site-header .navigation .primary {
+    display: table;  
+}
+
+.landing .site-header .navigation .secondary {
+    width: 40%;
+    display: table;
+}
+.minimized .landing .site-header .navigation .secondary {
+    display: table;
+}
+
+.site-header .navigation .primary li,
+.site-header .navigation .secondary li  {
+        display: table-cell;
+}
+
+.site-header .navigation .primary li a, .site-header .navigation .secondary li a {
+    color: #a9a9a9;
+    display: block;
+    min-height: 60px;
+    line-height: 60px;
+    font-size: 13px;
+    padding: 0 8px;
+    letter-spacing: 0.100em;
+    text-align: center;
+    text-transform: uppercase;
+}

@@ -1,0 +1,378 @@
+/* Large Devices, .visible-lg-* 
+----------------------------------------------*/
+@media (min-width: 1200px) {
+    .quick-nav li:nth-child(2) {
+        border-left: 1px solid #dbdecd;
+    }
+    
+    .box-grid .card img {
+        text-align: right;
+    }
+
+/* Changes 08.03.2017 Start */
+
+    /* main container modified width */
+    .container {
+    	width: 970px;
+	}
+
+/* home logged-in page Start */
+	/* slider arrows - left-right position */
+	.section-slider .icon-left {
+		left: -70px;
+	}
+	.section-slider .icon-right {
+		right: -70px;
+	}
+	/* slider arrows - size and bottom position */
+	.section-slider .slick-arrow, .related-slider .slick-arrow {
+		bottom: 56%;
+		font-size: 21px;
+	}
+	/* drop-down menu - spacing and letter spacing*/
+	.filter-tags ul li a {
+		padding: 0 9px;
+		letter-spacing: 0.065em;
+	}
+	/* card social media icons - margin */
+	.card-content .social-media li {
+		margin-right: 7px;
+	}
+	/* heart and comment num icon -size, comment num - margin */
+	.card-social .icon-heart {
+		font-size: 22px;
+	}
+	.comments-number:after {
+		font-size: 22px;
+	}
+	.card-social .comments-number {
+		margin-left: 10px;
+	}
+	/* dot more - margin top and bottom */
+	.masonry .load-more {
+		margin: 25px auto 40px auto;
+	}
+	/* service and offices links - letterspacing */
+	.footer-links h3 {
+		letter-spacing: 0.060em;
+	}
+	/* card header - letter spacing */
+	.card-content h2 {
+		letter-spacing: 0.020em;
+		font-size: 24px;
+	}
+/*home logged-in Stop*/
+
+/* Editors page Start */
+	/* card header - font size */
+	.editors .card h2 {
+		font-size: 25px;
+	}
+/*	.card-desc p {
+		font-size: 15px;
+		line-height: 24px;		
+	}	*/
+/* Editors page Stop*/
+
+/* Local offices page Start*/ 
+	/* office description title - font size */
+	.office-description p.title {
+		font-size: 36px;
+	}
+	/* location slogan title - font size */
+	.location-information p.location-slogan {
+		font-size: 40px;
+	}
+	/* location slogan member - font size */
+	.location-information p.location-elite-member {
+		font-size: 15px;
+	}
+	/* location slogan adress - font size */
+	.location-information p.place-adress {
+		font-size: 21px;
+	}
+	/* office quotes text - size and spacing */
+	.office-quotes p.quotes {
+		font-size: 18px;
+		line-height: 38px;		
+	}
+	/* office quotes - column gap */
+	.office-quotes .paragraph-columns {
+		-webkit-column-gap: 36px;
+        -moz-column-gap: 36px;
+    	column-gap: 36px;
+	}
+	/* office quotes author - font-size */
+	.office-quotes p.quotes-author {
+		font-size: 15px;
+	}
+	/* marked quote - font-size */
+	.content p.marked-quote {
+		font-size: 36px;
+	}
+	/* dark wide slider title, content - font size, padding*/
+	.dark-wide-slider p.office-slider-title {
+		font-size: 36px;
+	}
+	.dark-wide-slider p.office-slider-content {
+		font-size: 16px;
+	}
+	.dark-wide-slider p {
+		padding: 0;
+	}
+/* Local offices page Stop */
+
+/* My-account page Start*/
+	/* hotlists image size */
+	.cards.hotlists .card.info-zoom img {
+		height: 215px;
+	}
+	.cards.hotlists .over {
+		height: 215px;
+	}
+	/* i icon size and position */
+	.cards.hotlists .card.info-zoom i.icon-info-circled {
+		margin: 12px;
+		font-size: 25px;
+	}
+	/* buttons all - font size */
+	button, .button {
+		font-size: 13px;
+	} 
+/* My-account page Stop */
+
+/* newsletter page Start */
+	/* welcome text - font size */
+	.parallax.newsletter .welcome-txt {
+		font-size: 17px;
+	}
+	.parallax.newsletter .welcome-title {
+		font-size: 42px;
+	}
+	/* newsletter quote - font size */
+	.parallax.newsletter .newsletter-quote p {
+		font-size: 42px;
+	}
+	.parallax.newsletter .newsletter-quote p.newsletter-autor {
+		font-size: 15px;
+	}
+	.asterisk-before:before, .asterisk-after:after {
+		font-size: 26px;
+	}
+	/* signup message - font size */
+	.newsleter-signup-message p.small-info {
+		font-size: 15px;
+	}
+	.background-with-image span {
+		font-size: 26px;
+	}
+	/*promo block title - font size */
+	.card.zoom .promo-block-content .promo-title {
+		font-size: 20px;
+	}
+	/* image overlay - height */
+	.promo-block-content .img-overlay {
+		height: 272px;
+	}
+	.promo-block-content .content p {
+		font-size: 14px;
+	}
+/* newsletter page Stop */
+
+/* private-member page Start */
+	/* image height */
+	.card.info-zoom img {
+		height: 215px;
+	}
+	/* overlay height */
+	.over {
+		height: 215px;
+	}
+	/* i icon size and position */
+	.card.info-zoom i.icon-info-circled {
+		margin: 12px;
+		font-size: 25px;
+	}
+	/* image description - font size and spacing*/
+	.card.info-zoom p {
+		font-size: 14px;
+		letter-spacing: 0.065em;
+	}
+/* private-member page Stop */
+
+/* private-member-manage Start*/
+	/*push slider down a bit*/
+	.private-members-manage .indent-top {
+		margin-top: -300px;
+	}
+/* private-member-manage Stop*/
+
+/* styles page Start */
+	/* two rounded play signs - size*/
+	i.icon.icon-ellipse {
+		font-size: 62px;
+	}
+	/* image height */
+	.promo-block img {
+		height: 284px;
+	}
+	/* image position */
+	.services .image-position {
+		height: 307px;
+	}
+/*styles page Stop*/
+
+/*template1 page Start*/
+	/* headline above video */
+	.template-promo span {
+		letter-spacing: 0.250em;
+	}
+	.template-promo button {
+		width: 157px;
+	}
+	/* gallery height to move small pics into place */
+	.gallery-slider li img {
+		max-height: 378px;
+	}
+	/* title below gallery */
+	p.prestigious-title {
+		font-size: 26px;
+	}
+/* template1 page Stop */
+
+/* template3 page Start */
+	/* template3 page headline - font size*/
+	.template-lifestyle p.header-title {
+		font-size: 66px;
+	}
+	/* subtitle */
+	.subtitle, .dark-wide-slider p.quintessentiall-subtitle {
+		font-size: 15px;
+	}
+	.call-back-section p.call-text {
+		font-size: 26px;
+	}
+/* template3 page Stop */
+
+/* article page Start */
+	/* Headline size */
+	h1.article-title {
+		font-size: 81px;
+	}
+	/*change height to fit gallery to container*/
+	.instagram-gallery img {
+		max-height: 65px;
+	}
+	/* make tags smaller */
+	.tags-list li a {
+		padding: 12px 11px;
+	}
+	/* blockquote size */
+	.article-text blockquote {
+		font-size: 40px;
+		letter-spacing: 0.020em;
+	}
+	/* comments size */
+	.comments-list .comment-text {
+		font-size: 15px;
+	}
+	/* text under the title */
+	.template-lifestyle p.description {
+		font-size: 16px;
+	}
+	/*image overlay*/
+	.services-image-overlay {
+		height: 307px;
+	}
+/* article page Stop */
+
+/*Changes 08.03.2017 Stop */
+}
+/*
+
+.box-grid [class*="col"]:nth-child(3) { 
+    background-color: green;   
+}
+.box-grid [class*="col"]:nth-child(5n) { 
+    background-color: green;   
+}
+*/
+
+/* Large Desktop */
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+    .header .logo {
+        width: 25%;
+    }
+    .header .navigation {
+        width: 75%;
+    }
+  
+    .site-header .navigation .primary {
+        width: 58%;
+    }
+    
+    .site-header .navigation .quick {
+        width: 12%;
+    }
+    .site-header .socials {
+        width: 12%;
+    }
+    
+    
+    .site-header .user {
+        width: 18%;
+    }
+    .site-header .user li.login a {
+       min-width: 60px;
+    }
+    .site-header .user li.logout a {
+        min-width: 80px;
+    }
+    .site-header .user li.register a {
+        max-width: 100px;
+    }
+    .logged-in .site-header .user .profile .info em {
+        margin-right: 3%;
+    }
+    
+     .landing .site-header .navigation .secondary {
+        left: 30%;
+    }
+    
+    .minimized .landing .site-header .navigation .secondary {
+        width: 58%;
+    }
+    .site-header .navigation .primary li a, .site-header .navigation .secondary li a {
+        letter-spacing: 0.05em;
+    }
+    
+    .site-header .user li a {
+        letter-spacing: 0.05em;
+    }
+    
+/*
+    .site-footer .footer-navigation li:nth-child(3n+1):nth-last-child(-n+3),
+    .site-footer .footer-navigation li:nth-child(3n+1):nth-last-child(-n+3) ~ li {
+        float: left;
+    }
+*/
+    .site-footer .footer-navigation li:nth-child(7) {
+        clear: left;
+        float: left;
+    }
+    
+    
+    
+/*
+        Filter Tags
+    ------------------------------------
+
+    .sticked-to-menu .filter-tags {
+        padding-left: 30%;
+    }
+    .sticked-to-menu .filter-tags .dropdown-menu li a {
+        font-size: 15px;
+        padding: 0 20px;
+    }
+*/
+}

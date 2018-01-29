@@ -1,0 +1,155 @@
+@font-face {
+	font-family: 'Futura Std Book';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/FuturaStd-Book.eot');
+	src: local('Futura Std Book'), local('Futura Std Book'),
+        url('../fonts/FuturaStd-Book.eot') format('embedded-opentype'), 
+        url('../fonts/FuturaStd-Book.woff') format('woff'), 
+        url('../fonts/FuturaStd-Book.ttf') format('truetype');    
+}
+@font-face {
+	font-family: 'Futura Std Bold';
+	font-style: bold;
+	font-weight: 700;
+	src: url('../fonts/FuturaStd-Bold.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Futura Std Bold Oblique';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/FuturaStd-BoldOblique.eot');
+	src: local('Futura Std Bold Oblique'), local('Futura Std Bold Oblique'),
+        url('../fonts/FuturaStd-BoldOblique.eot') format('embedded-opentype'), 
+        url('../fonts/FuturaStd-BoldOblique.woff') format('woff'), 
+        url('../fonts/FuturaStd-BoldOblique.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Futura Std Book Oblique';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/FuturaStd-BookOblique.otf');
+	src: local('Futura Std Book Oblique'), local('Futura Std Book Oblique'),
+        url('../fonts/FuturaStd-BookOblique.eot') format('embedded-opentype'), 
+      	url('../fonts/FuturaStd-BookOblique.woff') format('woff'),
+      	url('../fonts/FuturaStd-BookOblique.ttf') format('truetype');
+
+
+}
+@font-face {
+	font-family: 'Futura Std Condensed';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/FuturaStd-Condensed.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Futura Std Condensed Bold';
+	font-style: bold;
+	font-weight: 700;
+	src: url('../fonts/FuturaStd-CondensedBold.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Futura Std Condensed Bold Obl';
+	font-style: bold;
+	font-weight: 700;
+	src: url('../fonts/FuturaStd-CondensedBoldObl.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Futura Std Condensed Extra Bd';
+	font-style: bold;
+	font-weight: 900;
+	src: url('../fonts/FuturaStd-CondensedExtraBd.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Futura Std Condensed Light';
+	font-style: normal;
+	font-weight: 100;
+	src: url('../fonts/FuturaStd-CondensedLight.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Futura Std Condensed Light Obl';
+	font-style: oblique;
+	font-weight: 100;
+	src: url('../fonts/FuturaStd-CondensedLightObl.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Futura Std Condensed Oblique';
+	font-style: oblique;
+	font-weight: 400;
+	src: url('../fonts/FuturaStd-CondensedOblique.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Futura Std Cond Extra Bold Obl';
+	font-style: oblique;
+	font-weight: 700;
+	src: url('../fonts/FuturaStd-CondExtraBoldObl.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Futura Std Extra Bold';
+	font-style: bold;
+	font-weight: 900;
+	src: url('../fonts/FuturaStd-ExtraBold.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Futura Std Extra Bold Oblique';
+	font-style: oblique;
+	font-weight: 900;
+	src: url('../fonts/FuturaStd-ExtraBoldOblique.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Futura Std Heavy';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/FuturaStd-Heavy.otf');
+	src: local('Futura Std Heavy'), local('Futura Std Heavy'),
+        url('../fonts/FuturaStd-Heavy.eot') format('embedded-opentype'), 
+        url('../fonts/FuturaStd-Heavy.woff') format('woff'), 
+        url('../fonts/FuturaStd-Heavy.ttf') format('truetype');    
+}
+
+@font-face {
+	font-family: 'Futura Std Heavy Oblique';
+	font-style: oblique;
+	font-weight: 400;
+	src: url('../fonts/FuturaStd-HeavyOblique.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Futura Std Light';
+	font-style: normal;
+	font-weight: 200;
+	src: url('../fonts/FuturaStd-Light.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Futura Std Light Oblique';
+	font-style: oblique;
+	font-weight: 400;
+	src: url('../fonts/FuturaStd-LightOblique.otf');
+	src: local('Futura Std Light Oblique'), local('Futura Std Light Oblique'),
+        url('../fonts/FuturaStd-LightOblique.eot') format('embedded-opentype'), 
+        url('../fonts/FuturaStd-LightOblique.woff') format('woff'), 
+        url('../fonts/FuturaStd-LightOblique.ttf') format('truetype');  
+}
+@font-face {
+	font-family: 'Futura Std Medium';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/FuturaStd-Medium.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Futura Std Medium Oblique';
+	font-style: oblique;
+	font-weight: 400;
+	src: url('../fonts/FuturaStd-MediumOblique.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Tw Cen MT';
+	font-weight: 400;
+	src: url('../fonts/ufonts.com_tw-cen-mt.otf');
+	src: local('Tw Cen MT'), local('Tw Cen MT'),
+        url('../fonts/ufonts.com_tw_cen_mt.eot') format('embedded-opentype'),
+        url('../fonts/ufonts.com_tw_cen_mt.woff') format('woff'), 
+        url('../fonts/ufonts.com_tw_cen_mt.ttf') format('truetype');
+}
+
+
+

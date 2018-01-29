@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "q-font";
+  src:url("../fonts/q-font.eot");
+  src:url("../fonts/q-font.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/q-font.woff") format("woff"),
+    url("../fonts/q-font.ttf") format("truetype"),
+    url("../fonts/q-font.svg#q-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "q-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "q-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    float: left;
+}
+@font-face {
+  font-family: "fontello";
+  src:url("../fonts/fontello.eot");
+  src:url("../fonts/fontello.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/fontello.woff") format("woff"),
+    url("../fonts/fontello.ttf") format("truetype"),
+    url("../fonts/fontello.svg#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[class^="icon-"]:after,
+[class*=" icon-"]:after {
+  font-family: "fontello" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    float: left;
+}
+.icon {
+  font-size: 35px;
+  color: #000;
+  line-height: 1;
+    display: inline-block;
+    cursor: pointer;
+}
+.icon-instagram:after {
+  content: "\f31e";
+}
+.icon-twitter:before {
+  content: "\61";
+}
+.icon-google-plus:before {
+  content: "\66";
+}
+.icon-rss:before {
+  content: "\68";
+}
+.icon-facebook:before {
+  content: "\6b";
+}
+.icon-pinterest:before {
+  content: "\6e";
+}
+.icon-linkedin:before {
+  content: "\71";
+}
+.icon-load-more:before {
+  content: "\41";
+}
+.icon-circle-phone:before {
+  content: "\44";
+}
+.icon-down-open-big:before {
+  content: "\45";
+}
+.icon-up-open-big:before {
+  content: "\46";
+}
+.icon-comment:before {
+  content: "\48";
+}
+.icon-menu:before {
+  content: "\4a";
+}
+.icon-heart:before {
+  content: "\4c";
+}
+.icon-heart-black:before {
+  content: "\4d";
+}
+.icon-video-player:before {
+  content: "\4f";
+}
+.icon-cross:before {
+  content: "\50";
+}
+.icon-down:before {
+  content: "\67";
+}
+.icon-pin:before {
+  content: "\62";
+}
+.icon-full-screen:before {
+  content: "\63";
+}
+.icon-triangle:before {
+  content: "\64";
+}
+.icon-circle:before {
+  content: "\65";
+}
+.icon-up:before {
+  content: "\6a";
+}
+.icon-left:before {
+  content: "\6f";
+}
+.icon-right:before {
+  content: "\77";
+}
+.icon-ellipse:before {
+  content: "\6c";
+}
+.icon-plus:before {
+  content: "\72";
+}
+.icon-search:before {
+  content: "\69";
+}
+.icon-search-button:before {
+  content: "\6d";
+}
+.icon-filter:before {
+  content: "\70";
+}
+.icon-check:before {
+  content: "\73";
+}
+.icon-arrow-circle-right:before {
+  content: "\74";
+}
+.icon-arrow-circle-left:before {
+  content: "\75";
+}
+.icon-more:before {
+  content: "\76";
+}
+.icon-asterisk:before {
+  content: "\78";
+}
+.icon-asterisk-1:before {
+  content: "\79";
+}
+.icon-asterisk-2:before {
+  content: "\7a";
+}
+.icon-info:before {
+  content: "\42";
+}
+.icon-info-circled:before {
+  content: "\47";
+}
+.icon-left-open-big:before {
+  content: "\43";
+}
+.icon-right-open-big:before {
+  content: "\49";
+}
