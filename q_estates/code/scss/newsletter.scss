@@ -1,0 +1,24 @@
+// 	
+// MASTER STYLESHEET
+
+// Webfonts
+@import "partials/_font";
+
+// MIXINS FILE
+@import "mixins/_mixins";
+@import "mixins/_colour_palette";
+
+// GENERIC STYLESHEETS
+@import "partials/_normalize";
+@import "partials/_animate";
+@import "partials/_grid";
+@import "partials/_font_awesome";
+
+// @import "partials/_legacy";
+
+
+// Custom Styles 
+@import "partials/_typography";
+@import "partials/_framework";
+@import "partials/_newsletter_signup";
+

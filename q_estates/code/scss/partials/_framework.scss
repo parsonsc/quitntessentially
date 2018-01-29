@@ -1,0 +1,33 @@
+// Framework
+
+
+// Generic 
+body {
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+a:hover, a:focus,
+a:hover {
+	text-decoration: none;
+}
+// End Generic 
+
+// Custom Framework Styles 
+
+
+// Tablet Styles
+@include respond-to(tablet) {
+
+}
+
+// Mobile Styles
+@include respond-to(mobile) {
+
+}
